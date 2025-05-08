@@ -1,12 +1,8 @@
-import './App.css'
+import { RouterProvider } from "react-router"
+import { router } from "./routes"
 
-function App() {
-
-  return (
-    <>
-      <h1>ENERGY FLOW</h1>
-    </>
-  )
+export const App = () => {
+    return(
+        <RouterProvider router={router} />
+    )
 }
-
-export default App
